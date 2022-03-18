@@ -7,21 +7,29 @@ using System.Threading.Tasks;
 namespace tpmodul4_130
 {
 
-    public class HaloGeneric<T>
+<<<<<<< HEAD
+=======
+    public class DataGeneric<T>
     {
-        public void SapaUser(T x)
+        private T data;
+        public DataGeneric(T data)
         {
-            Console.WriteLine("Halo User " + x);
+            this.data = data;
+        }
+        public void PrintData()
+        {
+            Console.WriteLine("Data yang tersimpan adalah: " + this.data);
         }
     }
+>>>>>>> generic-class
 
     internal class Program
     {
-        static void Main(string[] args)
-        {
-            HaloGeneric<string> halo = new HaloGeneric<string>();
-            String x = "Anugrah Saputra Aras";
-            halo.SapaUser(x);
+<<<<<<< HEAD
+=======
+            DataGeneric<String> data = new DataGeneric<string>("1302204047");
+            data.PrintData();
+>>>>>>> generic-class
         }
     }
 }
